@@ -3,11 +3,8 @@
 //    1. If the argument is a reference, ignore the reference part.
 //    2. Also ignore argument's const-ness or volatile-ness (unless it's the const-ness of data a pointer argument is pointing to).
 
-#include <iostream>
-#include <boost/type_index.hpp>
-
 template<typename T>
-void f(T param) {std::cout << boost::typeindex::type_id_with_cvr<decltype(param)>().pretty_name() << '\n';}
+void f(T param) {}
 
 int main()
 {
