@@ -56,8 +56,7 @@ int main()
     resetV({1, 2, 3}); 
     The above line would not compile for the same reason the function createInitList would not compile.
     If auto is used in a function return type OR a in lambda argument, template type deduction occurs,
-    and template type deduction will not deduce braced initializers (unless we're talking direct braced 
-    initialization and your compiler implements N3922). 
+    and template type deduction will never deduce braced initializers.
     */
     return 0;
 }
